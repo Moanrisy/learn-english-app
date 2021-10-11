@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_light_grey_bg"
+    android:padding="16dp"
+    tools:context="com.example.myapplication.Tasks.WordTask.WordTaskActivity">
+
+    <include layout="@layout/tasks_progress_bar" />
+
+    <include
+        android:id="@+id/task_default_body"
+        layout="@layout/task_default_body"/>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_below="@+id/task_default_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/sentence_line"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            app:flFlow="true"/>
+
+        <View
+            style="@style/split_line_horizontal"
+            android:layout_marginTop="50dp" />
+
+        <View
+            style="@style/split_line_horizontal"
+            android:layout_marginTop="105dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/answer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/check_button"
+        android:layout_marginBottom="50dp">
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_task_check"
+        android:background="@drawable/button_task_check"
+        android:text="check"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

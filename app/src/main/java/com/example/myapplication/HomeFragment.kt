@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.content.res.TypedArray
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.example.myapplication.Tasks.TapPairTask.TapPairActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.FragmentHomeBinding
 
@@ -45,6 +47,7 @@ class HomeFragment : Fragment() {
         binding.basicBar.setOnClickListener(){
             Toast.makeText(activity, "new day", Toast.LENGTH_SHORT).show()
             binding.basicBar.backgroundProgressColor = ContextCompat.getColor(requireContext().applicationContext, R.color.blue_background)
+            startActivity(Intent(this.context, TapPairActivity::class.java))
         }
 
         return binding.root
