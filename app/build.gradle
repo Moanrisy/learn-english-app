@@ -53,4 +53,33 @@ dependencies {
     // Kotlin
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    //Flow Layout
+    implementation 'com.nex3z:flow-layout:1.2.2'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+
+    //Firebase Dependencies
+    implementation'com.google.firebase:firebase-auth:19.1.0'
+//    implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:28.4.0')
+    // Declare the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-database'
+
+
+    //Hawk
+    implementation 'com.orhanobut:hawk:2.0.1'
+
+    //Dialog
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+
+    //Recycler View
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
