@@ -1,11 +1,15 @@
 package com.example.myapplication
 
+import android.content.res.TypedArray
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // This is home fragment
@@ -22,7 +26,6 @@ class HomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,8 +39,15 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val binding = FragmentHomeBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+//        return inflater.inflate(R.layout.fragment_home, container, false)
+        binding.basicBar.setOnClickListener(){
+            Toast.makeText(activity, "new day", Toast.LENGTH_SHORT).show()
+            binding.basicBar.backgroundProgressColor = ContextCompat.getColor(requireContext().applicationContext, R.color.blue_background)
+        }
+
+        return binding.root
     }
 
     companion object {

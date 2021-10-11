@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.databinding.FragmentProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,6 +23,8 @@ class ProfileFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+//    private lateinit var binding: ActivityMainBinding
+//    private var fragmentProfileBinding: FragmentProfileBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +38,23 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+//        binding = ActivityMainBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+        val binding = FragmentProfileBinding.inflate(inflater, container, false)
+//        fragmentProfileBinding = binding
+
+        binding.button1.setOnClickListener {
+            binding.textView1.setText("changed")
+            Toast.makeText(activity, "Texxttt", Toast.LENGTH_SHORT).show()
+        }
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+//        return inflater.inflate(R.layout.fragment_profile, container, false)
+        return binding.root
+    }
+
+    override fun onDestroyView() {
+//        fragmentProfileBinding = null
+        super.onDestroyView()
     }
 
     companion object {
