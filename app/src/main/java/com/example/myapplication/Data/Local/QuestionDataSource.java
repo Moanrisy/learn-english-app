@@ -31,12 +31,12 @@ public class QuestionDataSource implements DataSource.Local {
     public QuestionModel getRandomQuestionObj() {
 
         //Question
-        question.add("Ella come manzanas");
-        question.add("El come");
-        question.add("Usted es una mujer");
-        question.add("Tu eres un nino");
-        question.add("Que paso");
-        question.add("Yo soy un nino");
+        question.add("Dia makan apel");
+        question.add("Dia makan");
+        question.add("Kamu seorang perempuan");
+        question.add("Kamu seorang laki-laki");
+        question.add("Apa yang terjadi");
+        question.add("Saya seorang laki-laki");
 
         //Answer
         answer.add("She eats apple");
@@ -60,18 +60,18 @@ public class QuestionDataSource implements DataSource.Local {
 
         ArrayList<PairModel> pairs = new ArrayList<>();
 
-        pairs.add(new PairModel("manzanas", "apple"));
-        pairs.add(new PairModel("leche", "milk"));
-        pairs.add(new PairModel("bread", "pan"));
-        pairs.add(new PairModel("boy", "nino"));
-        pairs.add(new PairModel("ella", "she"));
-        pairs.add(new PairModel("a", "un"));
-        pairs.add(new PairModel("he", "el"));
-        pairs.add(new PairModel("girl", "nina"));
-        pairs.add(new PairModel("la", "the"));
-        pairs.add(new PairModel("tu", "you"));
-        pairs.add(new PairModel("bebes", "drink"));
-        pairs.add(new PairModel("agua", "water"));
+        pairs.add(new PairModel("apel", "apple"));
+        pairs.add(new PairModel("susu", "milk"));
+        pairs.add(new PairModel("bread", "roti"));
+        pairs.add(new PairModel("boy", "laki-laki"));
+        pairs.add(new PairModel("dia", "she"));
+        pairs.add(new PairModel("a", "sebuah"));
+        pairs.add(new PairModel("he", "dia"));
+        pairs.add(new PairModel("girl", "perempuan"));
+        pairs.add(new PairModel("itu", "the"));
+        pairs.add(new PairModel("kamu", "you"));
+        pairs.add(new PairModel("minum", "drink"));
+        pairs.add(new PairModel("air", "water"));
 
         return pairs;
     }
