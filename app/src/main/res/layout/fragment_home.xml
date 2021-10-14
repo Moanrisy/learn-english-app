@@ -16,7 +16,7 @@
             android:id="@+id/current_language"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Spanish"
+            android:text="English"
             android:textSize="17sp"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
