@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.Model.UserData
 import com.example.myapplication.databinding.ListPostBinding
 
-class PostAdapter(private val list: Array<UserData>) :
+class PostAdapter(private val list: ArrayList<UserData>) :
     RecyclerView.Adapter<PostAdapter.Holder>() {
 
     class Holder(val binding: ListPostBinding) : RecyclerView.ViewHolder(binding.root)

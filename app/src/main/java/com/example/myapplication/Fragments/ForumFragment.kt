@@ -1,15 +1,15 @@
 package com.example.myapplication.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListAdapter
 import com.example.myapplication.Adapters.PostAdapter
+import com.example.myapplication.AddDiscussionActivity
 import com.example.myapplication.Model.UserData
-import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentForumBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -25,11 +25,7 @@ private const val ARG_PARAM2 = "param2"
 class ForumFragment : Fragment() {
 
     private lateinit var adapter: PostAdapter
-    val listUsers = arrayOf(
-        UserData("joko", "joko123", "joko1@joko.com"),
-        UserData("jaka", "joko456", "joko2@joko.com"),
-        UserData("jiki", "joko789", "joko3@joko.com")
-    )
+    var listUsers = ArrayList<UserData>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,8 +35,23 @@ class ForumFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+//        Toast.makeText(activity, this.arguments?.getString("title"), Toast.LENGTH_SHORT).show()
+        listUsers.add(UserData("joko", "joko123", "joko1@joko.com"))
+        listUsers.add(UserData("xah", "joko123", "joko1@joko.com"))
+        listUsers.add(UserData("zz", "joko123", "joko1@joko.com"))
+
+        val title = this.arguments?.getString("title")
+        val content = this.arguments?.getString("content")
+
+        if (title != null) {
+            listUsers.add(UserData(title, content, "j"))
+        }
+
         val binding = FragmentForumBinding.inflate(inflater, container, false)
+        binding.fab.setOnClickListener {
+            startActivity(Intent(activity, AddDiscussionActivity::class.java))
+
+        }
         binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(activity)

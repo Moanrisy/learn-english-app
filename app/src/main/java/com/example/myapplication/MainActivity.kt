@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.myapplication.Fragments.ForumFragment
@@ -26,9 +27,32 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 //        setContentView(R.layout.activity_main)
-        supportFragmentManager.inTransaction {
-            add(R.id.frameLayout, HomeFragment())
+
+        var intentFragment = getIntent().getExtras()?.getString("frgToLoad")
+        var postTitle = getIntent().getExtras()?.getString("title")
+        var postContent = getIntent().getExtras()?.getString("content")
+
+
+        when (intentFragment) {
+            "forum" -> {
+                val bundle = Bundle()
+                bundle.putString("title", postTitle)
+                bundle.putString("content", postContent)
+                val forumFragment = ForumFragment()
+                forumFragment.arguments = bundle
+
+                binding.bottomNav.menu.getItem(1).setChecked(true)
+                supportFragmentManager.inTransaction {
+                    add(R.id.frameLayout, forumFragment)
+                }
+            }
+            else -> {
+                supportFragmentManager.inTransaction {
+                    add(R.id.frameLayout, HomeFragment())
+                }
+            }
         }
+
 
         binding.bottomNav.setOnItemSelectedListener {
             when (it.itemId) {
