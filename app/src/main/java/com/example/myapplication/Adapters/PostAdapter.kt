@@ -1,9 +1,13 @@
 package com.example.myapplication.Adapters
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.AddDiscussionActivity
+import com.example.myapplication.DiscussionActivity
 import com.example.myapplication.Model.UserData
 import com.example.myapplication.databinding.ListPostBinding
 
@@ -25,6 +29,10 @@ class PostAdapter(private val list: ArrayList<UserData>) :
                 binding.likeIcon.setOnClickListener {
                     binding.likeCount.text = "1"+position.toString()
                     Toast.makeText(itemView.context, "Like clicked"+position.toString(), Toast.LENGTH_SHORT).show()
+                }
+
+                binding.commentIcon.setOnClickListener {
+                    itemView.context.startActivity(Intent(itemView.context, DiscussionActivity::class.java))
                 }
             }
         }
