@@ -5,9 +5,11 @@
       <map>
         <entry key="app/src/main/res/drawable-xhdpi/ic_like_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-xhdpi/ic_mode_comment.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/image_border.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/round_edit_text.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_forum.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.17654508611955422" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.1" />
         <entry key="app/src/main/res/layout/list_post.xml" value="0.17654508611955422" />
       </map>
     </option>

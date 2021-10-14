@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.inTransaction {
                         replace(R.id.frameLayout, SettingFragment())
                     }
-                    setContent("Search")
+                    setContent("")
                     true
                 }
                 R.id.profileFragment -> {
