@@ -38,4 +38,12 @@
     <color name="blue_background">#00abe4</color>
     <color name="default_light_grey_bg">#f5f5f5</color>
 
+    <!-- New color -->
+    <color name="overlay_dark_10">#1A000000</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="blue_grey_400">#78909C</color>
+
+
 </resources>

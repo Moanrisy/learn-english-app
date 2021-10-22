@@ -43,10 +43,10 @@ class ProfileFragment : Fragment() {
         val binding = FragmentProfileBinding.inflate(inflater, container, false)
 //        fragmentProfileBinding = binding
 
-        binding.button1.setOnClickListener {
-            binding.textView1.setText("changed")
-            Toast.makeText(activity, "Texxttt", Toast.LENGTH_SHORT).show()
-        }
+//        binding.button1.setOnClickListener {
+//            binding.textView1.setText("changed")
+//            Toast.makeText(activity, "Texxttt", Toast.LENGTH_SHORT).show()
+//        }
         // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_profile, container, false)
         return binding.root

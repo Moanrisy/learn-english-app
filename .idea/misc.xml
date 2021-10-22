@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/bg_gradient_very_soft.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_chat_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_description.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_receipt.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_swap_horiz.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/shape_circle_outline.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/shape_circle_outline_2dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-xhdpi/ic_like_icon.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-xhdpi/ic_mode_comment.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/image_border.xml" value="0.1" />
@@ -11,6 +18,7 @@
         <entry key="app/src/main/res/layout/activity_discussion.xml" value="0.1503623188405797" />
         <entry key="app/src/main/res/layout/fragment_forum.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.11503623188405797" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_comment.xml" value="0.1503623188405797" />
         <entry key="app/src/main/res/layout/list_post.xml" value="0.17654508611955422" />
