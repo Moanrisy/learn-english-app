@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.example.myapplication.AchievementActivity
+import com.example.myapplication.NotificationActivity
 import com.example.myapplication.StatisticActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.FragmentProfileBinding
@@ -52,6 +53,10 @@ class ProfileFragment : Fragment() {
 
         binding.statistics.setOnClickListener {
             startActivity(Intent(activity, StatisticActivity::class.java))
+        }
+
+        binding.notifications.setOnClickListener {
+            startActivity(Intent(activity, NotificationActivity::class.java))
         }
 //        binding.button1.setOnClickListener {
 //            binding.textView1.setText("changed")
