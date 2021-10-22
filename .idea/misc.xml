@@ -9,16 +9,19 @@
         <entry key="app/src/main/res/drawable-v24/ic_crop_original.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_description.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_favorites.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_file_download.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_fitness_center.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_location.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_near_me.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_peoples.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_person.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_receipt.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_shopping_basket.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_star.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_subject.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_swap_horiz.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_textsms.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/shape_circle.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/shape_circle_outline.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/shape_circle_outline_2dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/shape_rounded_orange.xml" value="0.1" />
@@ -29,6 +32,7 @@
         <entry key="app/src/main/res/layout/activity_achievement.xml" value="0.17777777777777778" />
         <entry key="app/src/main/res/layout/activity_add_discussion.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_discussion.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_statistic.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_forum.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.11503623188405797" />
