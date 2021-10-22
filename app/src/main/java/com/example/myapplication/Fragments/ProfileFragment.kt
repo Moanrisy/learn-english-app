@@ -1,11 +1,13 @@
 package com.example.myapplication.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.example.myapplication.AchievementActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.FragmentProfileBinding
 
@@ -43,6 +45,9 @@ class ProfileFragment : Fragment() {
         val binding = FragmentProfileBinding.inflate(inflater, container, false)
 //        fragmentProfileBinding = binding
 
+        binding.achievement.setOnClickListener {
+            startActivity(Intent(activity, AchievementActivity::class.java))
+        }
 //        binding.button1.setOnClickListener {
 //            binding.textView1.setText("changed")
 //            Toast.makeText(activity, "Texxttt", Toast.LENGTH_SHORT).show()
