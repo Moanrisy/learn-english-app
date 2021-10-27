@@ -1,14 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.Adapters.CommentAdapter
 import com.example.myapplication.Model.UserData
-import com.example.myapplication.databinding.ActivityAddDiscussionBinding
 import com.example.myapplication.databinding.ActivityDiscussionBinding
-import com.example.myapplication.databinding.ActivityMainBinding
 
 class DiscussionActivity : AppCompatActivity() {
 

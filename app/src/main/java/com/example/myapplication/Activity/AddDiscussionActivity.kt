@@ -1,12 +1,10 @@
-package com.example.myapplication
+package com.example.myapplication.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.myapplication.Fragments.ForumFragment
 import com.example.myapplication.Fragments.SettingFragment
 import com.example.myapplication.databinding.ActivityAddDiscussionBinding
 

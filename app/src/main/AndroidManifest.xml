@@ -10,25 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LessonCompletedActivity"
+            android:name=".Activity.LessonCompletedActivity"
             android:exported="false" />
         <activity
-            android:name=".NotificationActivity"
+            android:name=".Activity.NotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".StatisticActivity"
+            android:name=".Activity.StatisticActivity"
             android:exported="false" />
         <activity
-            android:name=".AchievementActivity"
+            android:name=".Activity.AchievementActivity"
             android:exported="false" />
         <activity
-            android:name=".DiscussionActivity"
+            android:name=".Activity.DiscussionActivity"
             android:exported="false" />
         <activity
-            android:name=".AddDiscussionActivity"
+            android:name=".Activity.AddDiscussionActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

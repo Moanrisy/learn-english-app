@@ -1,11 +1,12 @@
-package com.example.myapplication
+package com.example.myapplication.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplication.R
 
-class NotificationActivity : AppCompatActivity() {
+class AchievementActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_notification)
+        setContentView(R.layout.activity_achievement)
     }
 }

@@ -1,14 +1,14 @@
-package com.example.myapplication
+package com.example.myapplication.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.myapplication.Fragments.ForumFragment
 import com.example.myapplication.Fragments.HomeFragment
 import com.example.myapplication.Fragments.ProfileFragment
 import com.example.myapplication.Fragments.SettingFragment
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

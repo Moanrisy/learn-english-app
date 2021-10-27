@@ -3,9 +3,8 @@ package com.example.myapplication.Utils;
 import android.content.Context;
 import android.content.Intent;
 
-import com.example.myapplication.LessonCompletedActivity;
+import com.example.myapplication.Activity.LessonCompletedActivity;
 import com.example.myapplication.Tasks.TapPairTask.TapPairActivity;
-import com.example.myapplication.Tasks.WordTask.WordTaskActivity;
 
 import java.util.ArrayList;
 import java.util.Random;

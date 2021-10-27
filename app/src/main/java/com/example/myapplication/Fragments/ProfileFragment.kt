@@ -6,11 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import com.example.myapplication.AchievementActivity
-import com.example.myapplication.NotificationActivity
-import com.example.myapplication.StatisticActivity
-import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.Activity.AchievementActivity
+import com.example.myapplication.Activity.NotificationActivity
+import com.example.myapplication.Activity.StatisticActivity
 import com.example.myapplication.databinding.FragmentProfileBinding
 
 // TODO: Rename parameter arguments, choose names that match

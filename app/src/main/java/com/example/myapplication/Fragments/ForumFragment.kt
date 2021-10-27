@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.Adapters.PostAdapter
-import com.example.myapplication.AddDiscussionActivity
+import com.example.myapplication.Activity.AddDiscussionActivity
 import com.example.myapplication.Model.UserData
 import com.example.myapplication.databinding.FragmentForumBinding
 
