@@ -32,14 +32,16 @@
         <entry key="app/src/main/res/layout/activity_achievement.xml" value="0.17777777777777778" />
         <entry key="app/src/main/res/layout/activity_add_discussion.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_discussion.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_lesson_completed.xml" value="0.11752786220871327" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.21428571428571427" />
         <entry key="app/src/main/res/layout/activity_statistic.xml" value="0.1348314606741573" />
         <entry key="app/src/main/res/layout/fragment_forum.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.11503623188405797" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_comment.xml" value="0.1503623188405797" />
         <entry key="app/src/main/res/layout/list_post.xml" value="0.17654508611955422" />
+        <entry key="app/src/main/res/layout/week_progress_bar.xml" value="0.11752786220871327" />
       </map>
     </option>
   </component>

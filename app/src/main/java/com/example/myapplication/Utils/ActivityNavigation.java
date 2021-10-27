@@ -3,6 +3,7 @@ package com.example.myapplication.Utils;
 import android.content.Context;
 import android.content.Intent;
 
+import com.example.myapplication.LessonCompletedActivity;
 import com.example.myapplication.Tasks.TapPairTask.TapPairActivity;
 import com.example.myapplication.Tasks.WordTask.WordTaskActivity;
 
@@ -38,7 +39,7 @@ public class ActivityNavigation {
 
     private void initData() {
 
-        activities.add(WordTaskActivity.class);
+//        activities.add(WordTaskActivity.class);
 //        activities.add(TSTaskActivity.class);
         activities.add(TapPairActivity.class);
     }
@@ -53,7 +54,7 @@ public class ActivityNavigation {
 
     public void lessonCompleted() {
 
-//        Intent intent = new Intent(context, LessonCompletedActivity.class);
-//        context.startActivity(intent);
+        Intent intent = new Intent(context, LessonCompletedActivity.class);
+        context.startActivity(intent);
     }
 }

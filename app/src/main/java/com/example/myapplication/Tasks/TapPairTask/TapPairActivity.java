@@ -224,6 +224,8 @@ public class TapPairActivity extends AppCompatActivity {
 
                     progressBarValue = 0;
 
+                    ActivityNavigation.getInstance(context).lessonCompleted();
+
                     Hawk.put("progressBarValue", progressBarValue);
                 }
             }
