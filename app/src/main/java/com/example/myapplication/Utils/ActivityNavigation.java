@@ -5,6 +5,7 @@ import android.content.Intent;
 
 import com.example.myapplication.Activity.LessonCompletedActivity;
 import com.example.myapplication.Tasks.TapPairTask.TapPairActivity;
+import com.example.myapplication.Tasks.TranslateSentenceTask.TSTaskActivity;
 
 import java.util.ArrayList;
 import java.util.Random;

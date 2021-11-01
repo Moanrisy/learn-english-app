@@ -35,6 +35,8 @@
         <entry key="app/src/main/res/layout/activity_lesson_completed.xml" value="0.11752786220871327" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.21428571428571427" />
         <entry key="app/src/main/res/layout/activity_statistic.xml" value="0.1348314606741573" />
+        <entry key="app/src/main/res/layout/activity_translate_sentence.xml" value="0.11372847011144883" />
+        <entry key="app/src/main/res/layout/activity_tstask.xml" value="0.11372847011144883" />
         <entry key="app/src/main/res/layout/fragment_forum.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.33" />

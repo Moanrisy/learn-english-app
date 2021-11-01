@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_light_grey_bg"
+    android:padding="16dp"
+    tools:context="com.example.myapplication.Tasks.WordTask.WordTaskActivity">
+
+    <include layout="@layout/tasks_progress_bar" />
+
+    <include
+        android:id="@+id/task_default_body"
+        layout="@layout/task_default_body"/>
+
+    <EditText
+        android:id="@+id/user_answer"
+        android:hint="Type the English translation"
+        android:layout_below="@+id/task_default_body"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="start"
+        android:background="@drawable/custom_word_border"/>
+
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_task_check"
+        android:textColor="@color/button_task_check"
+        android:textSize="17sp"
+        android:text="check"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
