@@ -48,7 +48,8 @@ class HomeFragment : Fragment() {
 //        return inflater.inflate(R.layout.fragment_home, container, false)
         binding.basicBar.setOnClickListener(){
             Toast.makeText(activity, "new day", Toast.LENGTH_SHORT).show()
-            binding.basicBar.backgroundProgressColor = ContextCompat.getColor(requireContext().applicationContext, R.color.blue_background)
+//            binding.basicBar.setProgress(20F)
+//            binding.basicBar.backgroundProgressColor = ContextCompat.getColor(requireContext().applicationContext, R.color.blue_background)
             startActivity(Intent(this.context, TSTaskActivity::class.java))
         }
 
