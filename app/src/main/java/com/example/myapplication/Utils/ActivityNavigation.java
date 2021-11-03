@@ -6,6 +6,7 @@ import android.content.Intent;
 import com.example.myapplication.Activity.LessonCompletedActivity;
 import com.example.myapplication.Tasks.TapPairTask.TapPairActivity;
 import com.example.myapplication.Tasks.TranslateSentenceTask.TSTaskActivity;
+import com.example.myapplication.Tasks.WordTask.WordTaskActivity;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -39,8 +40,8 @@ public class ActivityNavigation {
 
     private void initData() {
 
-//        activities.add(WordTaskActivity.class);
-//        activities.add(TSTaskActivity.class);
+        activities.add(WordTaskActivity.class);
+        activities.add(TSTaskActivity.class);
         activities.add(TapPairActivity.class);
     }
 

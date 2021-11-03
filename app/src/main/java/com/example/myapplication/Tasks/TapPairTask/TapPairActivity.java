@@ -3,6 +3,7 @@ package com.example.myapplication.Tasks.TapPairTask;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -107,7 +108,9 @@ public class TapPairActivity extends AppCompatActivity {
 
         Collections.shuffle(pairs);
 
-        randomN = random.nextInt(3) + 4;
+        randomN = random.nextInt(3) + 2;
+
+        Log.d(TAG, "randomizePair: "+randomN);
 
         for (int i = 0; i < randomN; i++) {
 
@@ -219,8 +222,8 @@ public class TapPairActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (progressBarValue < 10) {
-//                if (progressBarValue < 100) {
+//                if (progressBarValue < 10) {
+                if (progressBarValue < 100) {
 
                     ActivityNavigation.getInstance(context).takeToRandomTask();
 
