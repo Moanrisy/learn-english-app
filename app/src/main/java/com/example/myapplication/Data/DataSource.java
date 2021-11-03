@@ -11,7 +11,7 @@ public interface DataSource {
 
     interface Local{
 
-        ArrayList<PairModel> getPairs();
+        ArrayList<PairModel> getPairs(String chapter);
 
         QuestionModel getRandomQuestionObj(String chapter);
 

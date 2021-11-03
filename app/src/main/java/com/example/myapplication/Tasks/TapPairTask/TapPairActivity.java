@@ -80,7 +80,7 @@ public class TapPairActivity extends AppCompatActivity {
 
         repository = Injection.provideRepository();
 
-        pairs = repository.getPairs();
+        pairs = repository.getPairs(intent.getStringExtra("chapter"));
 
         Hawk.init(this).build();
 

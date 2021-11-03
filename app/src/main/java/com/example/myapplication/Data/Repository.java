@@ -43,8 +43,8 @@ public class Repository implements DataSource.Local, DataSource.Remote {
     }
 
     @Override
-    public ArrayList<PairModel> getPairs() {
-        return dataSourceLocal.getPairs();
+    public ArrayList<PairModel> getPairs(String chapter) {
+        return dataSourceLocal.getPairs(chapter);
     }
 
     @Override
