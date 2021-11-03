@@ -41,12 +41,12 @@ public class QuestionDataSource implements DataSource.Local {
                 answer.add("She eats apple");
                 answer.add("He eats");
 
-//                question.add("Bagaimana kabarmu?");
-//                answer.add("How are you?");
-//                question.add("Saya baik-baik saja, terimakasih");
-//                answer.add("I am fine, thanks");
-//                question.add("Siapa namamu?");
-//                answer.add("What is your name?");
+                question.add("Bagaimana kabarmu?");
+                answer.add("How are you?");
+                question.add("Saya baik-baik saja, terimakasih");
+                answer.add("I am fine, thanks");
+                question.add("Siapa namamu?");
+                answer.add("What is your name?");
 //                question.add("Nama saya Sasha");
 //                answer.add("My name is Sasha");
 //                question.add("Berapa umurmu?");

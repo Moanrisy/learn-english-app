@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat
 import com.example.myapplication.R
 import com.example.myapplication.Tasks.TapPairTask.TapPairActivity
 import com.example.myapplication.Tasks.TranslateSentenceTask.TSTaskActivity
+import com.example.myapplication.Tasks.WordTask.WordTaskActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.FragmentHomeBinding
 
@@ -60,7 +61,7 @@ class HomeFragment : Fragment() {
             val editor = sharedPref?.edit()
             editor?.putString("chapter", "11")?.apply()
 
-            val intent = Intent(this.context, TapPairActivity::class.java)
+            val intent = Intent(this.context, WordTaskActivity::class.java)
             startActivity(intent)
         }
 

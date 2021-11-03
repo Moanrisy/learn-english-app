@@ -41,8 +41,8 @@ public class ActivityNavigation {
     private void initData() {
 
         activities.add(WordTaskActivity.class);
-//        activities.add(TSTaskActivity.class);
-//        activities.add(TapPairActivity.class);
+        activities.add(TSTaskActivity.class);
+        activities.add(TapPairActivity.class);
     }
 
     public void takeToRandomTask() {
