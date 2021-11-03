@@ -61,7 +61,7 @@ class HomeFragment : Fragment() {
             val editor = sharedPref?.edit()
             editor?.putString("chapter", "11")?.apply()
 
-            val intent = Intent(this.context, WordTaskActivity::class.java)
+            val intent = Intent(this.context, TapPairActivity::class.java)
             startActivity(intent)
         }
 

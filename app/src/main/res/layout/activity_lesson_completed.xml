@@ -53,6 +53,6 @@
         android:background="@drawable/button_task_continue"
         android:text="continue"
         android:textColor="@color/white_text"
-        android:textSize="17sp"/>
+        android:textSize="17sp" />
 
 </RelativeLayout>

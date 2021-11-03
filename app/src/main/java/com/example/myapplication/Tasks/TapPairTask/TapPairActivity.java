@@ -223,8 +223,8 @@ public class TapPairActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-//                if (progressBarValue < 10) {
-                if (progressBarValue < 100) {
+                if (progressBarValue < 10) {
+//                if (progressBarValue < 100) {
 
                     ActivityNavigation.getInstance(context).takeToRandomTask();
 
