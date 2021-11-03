@@ -1,6 +1,7 @@
 package com.example.myapplication.Tasks.WordTask;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -106,12 +107,14 @@ public class WordTaskActivity extends AppCompatActivity {
 
     private void initData() {
 
+        SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
+
         checkButton.setEnabled(false);
 
         repository = Injection.provideRepository();
 
         answers = repository.getAnswer();
-        questionModel = repository.getRandomQuestionObj("11");
+        questionModel = repository.getRandomQuestionObj(prefs.getString("chapter", "no name"));
 
         Hawk.init(this).build();
 

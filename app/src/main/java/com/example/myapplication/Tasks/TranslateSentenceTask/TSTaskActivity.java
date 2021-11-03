@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -61,11 +62,13 @@ public class TSTaskActivity extends AppCompatActivity{
 
     private void initData() {
 
+        SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
+
         checkButton.setEnabled(false);
 
         repository = Injection.provideRepository();
 
-        questionModel = repository.getRandomQuestionObj("11");
+        questionModel = repository.getRandomQuestionObj(prefs.getString("chapter", "no name"));
 
         progressBarValue = 0;
 
