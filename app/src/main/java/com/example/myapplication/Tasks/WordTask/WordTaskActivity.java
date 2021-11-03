@@ -111,7 +111,7 @@ public class WordTaskActivity extends AppCompatActivity {
         repository = Injection.provideRepository();
 
         answers = repository.getAnswer();
-        questionModel = repository.getRandomQuestionObj();
+        questionModel = repository.getRandomQuestionObj(11);
 
         Hawk.init(this).build();
 

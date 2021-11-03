@@ -13,7 +13,7 @@ public interface DataSource {
 
         ArrayList<PairModel> getPairs();
 
-        QuestionModel getRandomQuestionObj();
+        QuestionModel getRandomQuestionObj(int chapter);
 
         ArrayList<String> getAnswer();
     }

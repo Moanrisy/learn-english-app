@@ -65,7 +65,7 @@ public class TSTaskActivity extends AppCompatActivity{
 
         repository = Injection.provideRepository();
 
-        questionModel = repository.getRandomQuestionObj();
+        questionModel = repository.getRandomQuestionObj(11);
 
         progressBarValue = 0;
 
