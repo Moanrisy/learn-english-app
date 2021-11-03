@@ -48,7 +48,7 @@ public class Repository implements DataSource.Local, DataSource.Remote {
     }
 
     @Override
-    public QuestionModel getRandomQuestionObj(int chapter) {
+    public QuestionModel getRandomQuestionObj(String chapter) {
         return dataSourceLocal.getRandomQuestionObj(chapter);
     }
 

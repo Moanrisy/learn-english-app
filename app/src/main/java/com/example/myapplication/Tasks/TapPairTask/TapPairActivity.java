@@ -1,6 +1,7 @@
 package com.example.myapplication.Tasks.TapPairTask;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -71,6 +72,9 @@ public class TapPairActivity extends AppCompatActivity {
     }
 
     private void initData() {
+
+        Intent intent = getIntent();
+        Toast.makeText(context, intent.getStringExtra("chapter"), Toast.LENGTH_SHORT).show();
 
         checkButton.setEnabled(false);
 

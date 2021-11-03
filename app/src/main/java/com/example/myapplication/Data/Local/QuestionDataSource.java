@@ -28,10 +28,10 @@ public class QuestionDataSource implements DataSource.Local {
         return INSTANCE;
     }
 
-    public QuestionModel getRandomQuestionObj(int chapter) {
+    public QuestionModel getRandomQuestionObj(String chapter) {
 
         switch (chapter) {
-            case 11:
+            case "11":
                 question.add("Bagaimana kabarmu?");
                 answer.add("How are you?");
                 question.add("Saya baik-baik saja, terimakasih");
@@ -73,9 +73,9 @@ public class QuestionDataSource implements DataSource.Local {
                 question.add("Saya punya dua saudara perempuan");
                 answer.add("I have two sisters");
                 break;
-            case 12:
+            case "12":
                 break;
-            case 13:
+            case "13":
                 break;
         }
 
