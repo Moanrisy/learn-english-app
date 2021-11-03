@@ -2,6 +2,7 @@ package com.example.myapplication.Tasks.TapPairTask;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -74,14 +75,14 @@ public class TapPairActivity extends AppCompatActivity {
 
     private void initData() {
 
-        Intent intent = getIntent();
-        Toast.makeText(context, intent.getStringExtra("chapter"), Toast.LENGTH_SHORT).show();
+        SharedPreferences prefs = getSharedPreferences("app", MODE_PRIVATE);
+//        Log.d(TAG, "initData: "+prefs.getString("chapter", "no name"));
 
         checkButton.setEnabled(false);
 
         repository = Injection.provideRepository();
 
-        pairs = repository.getPairs(intent.getStringExtra("chapter"));
+        pairs = repository.getPairs(prefs.getString("chapter", "no name"));
 
         Hawk.init(this).build();
 

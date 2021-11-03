@@ -1,8 +1,11 @@
 package com.example.myapplication.Fragments
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.res.TypedArray
 import android.os.Bundle
+import android.preference.PreferenceManager
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -46,12 +49,18 @@ class HomeFragment : Fragment() {
         val binding = FragmentHomeBinding.inflate(inflater, container, false)
         // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_home, container, false)
+
+
         binding.basicBar.setOnClickListener(){
 //            Toast.makeText(activity, "new day", Toast.LENGTH_SHORT).show()
 //            binding.basicBar.setProgress(20F)
 //            binding.basicBar.backgroundProgressColor = ContextCompat.getColor(requireContext().applicationContext, R.color.blue_background)
+
+            val sharedPref: SharedPreferences? = context?.getSharedPreferences("app", Context.MODE_PRIVATE)
+            val editor = sharedPref?.edit()
+            editor?.putString("chapter", "11")?.apply()
+
             val intent = Intent(this.context, TapPairActivity::class.java)
-            intent.putExtra("chapter", "11")
             startActivity(intent)
         }
 
