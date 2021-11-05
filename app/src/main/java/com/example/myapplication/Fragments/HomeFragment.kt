@@ -51,17 +51,28 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
 //        return inflater.inflate(R.layout.fragment_home, container, false)
 
+        val sharedPref: SharedPreferences? = context?.getSharedPreferences("app", Context.MODE_PRIVATE)
+        val editor = sharedPref?.edit()
 
         binding.perkenalan.setOnClickListener(){
 //            Toast.makeText(activity, "new day", Toast.LENGTH_SHORT).show()
 //            binding.basicBar.setProgress(20F)
 //            binding.basicBar.backgroundProgressColor = ContextCompat.getColor(requireContext().applicationContext, R.color.blue_background)
 
-            val sharedPref: SharedPreferences? = context?.getSharedPreferences("app", Context.MODE_PRIVATE)
-            val editor = sharedPref?.edit()
             editor?.putString("chapter", "11")?.apply()
-
             val intent = Intent(this.context, TapPairActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.salam.setOnClickListener {
+            editor?.putString("chapter", "11")?.apply()
+            val intent = Intent(this.context, WordTaskActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.angka.setOnClickListener {
+            editor?.putString("chapter", "11")?.apply()
+            val intent = Intent(this.context, TSTaskActivity::class.java)
             startActivity(intent)
         }
 
