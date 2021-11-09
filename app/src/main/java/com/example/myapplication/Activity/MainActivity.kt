@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.myapplication.Fragments.ForumFragment
-import com.example.myapplication.Fragments.HomeFragment
-import com.example.myapplication.Fragments.ProfileFragment
-import com.example.myapplication.Fragments.SettingFragment
+import com.example.myapplication.Fragments.*
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 
@@ -65,11 +62,18 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.forumFragment -> {
                     supportFragmentManager.inTransaction {
-                        replace(R.id.frameLayout, ForumFragment())
+                        replace(R.id.frameLayout, YoutubeFragment())
                     }
-                    setContent("Forum")
+                    setContent("Youtube")
                     true
                 }
+//                R.id.forumFragment -> {
+//                    supportFragmentManager.inTransaction {
+//                        replace(R.id.frameLayout, ForumFragment())
+//                    }
+//                    setContent("Forum")
+//                    true
+//                }
                 R.id.settingFragment -> {
                     supportFragmentManager.inTransaction {
                         replace(R.id.frameLayout, SettingFragment())

@@ -3,20 +3,14 @@ package com.example.myapplication.Fragments
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.content.res.TypedArray
 import android.os.Bundle
-import android.preference.PreferenceManager
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import androidx.core.content.ContextCompat
-import com.example.myapplication.R
 import com.example.myapplication.Tasks.TapPairTask.TapPairActivity
 import com.example.myapplication.Tasks.TranslateSentenceTask.TSTaskActivity
 import com.example.myapplication.Tasks.WordTask.WordTaskActivity
-import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
