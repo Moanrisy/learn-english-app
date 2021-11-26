@@ -9,6 +9,9 @@
     <dimen name="viewpager_margin_overlap">-60dp</dimen>
     <dimen name="viewpager_margin_overlap_payment">-30dp</dimen>
 
+    <dimen name="height">88dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="text_size">18sp</dimen>
 
     <dimen name="icon_top_margin">24dp</dimen>
     <dimen name="icon_bottom_margin">24dp</dimen>

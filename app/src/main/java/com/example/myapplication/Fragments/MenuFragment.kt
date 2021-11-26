@@ -1,5 +1,6 @@
 package com.example.myapplication.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.myapplication.Activity.VocabActivity
 import com.example.myapplication.Fragments.*
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentMenuBinding
@@ -41,6 +43,10 @@ class MenuFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding = FragmentMenuBinding.inflate(inflater, container, false)
         val transactions = activity?.supportFragmentManager?.beginTransaction()
+
+        binding.vocab.setOnClickListener {
+            startActivity(Intent(this.context, VocabActivity::class.java))
+        }
 
         binding.grammar.setOnClickListener {
             transactions?.replace(R.id.frameLayout, GrammarFragment())?.addToBackStack("tag")

@@ -8,6 +8,14 @@
         <item name="colorAccent">@color/blue_background</item>
     </style>
 
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabTextColor">@color/tab_text_color</item>
+    </style>
+
     <style name="Toolbar.Light" parent="@style/AppTheme">
         <item name="colorControlNormal">@color/grey_60</item>
         <item name="android:textColorPrimary">@color/grey_60</item>

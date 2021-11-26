@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_near_me.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_peoples.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_person.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/ic_play_arrow_white.xml" value="0.15555555555555556" />
         <entry key="app/src/main/res/drawable-v24/ic_receipt.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_shopping_basket.xml" value="0.1" />
         <entry key="app/src/main/res/drawable-v24/ic_star.xml" value="0.1" />
@@ -38,6 +39,7 @@
         <entry key="app/src/main/res/layout/activity_statistic.xml" value="0.1348314606741573" />
         <entry key="app/src/main/res/layout/activity_translate_sentence.xml" value="0.11372847011144883" />
         <entry key="app/src/main/res/layout/activity_tstask.xml" value="0.11372847011144883" />
+        <entry key="app/src/main/res/layout/activity_vocab.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_youtube.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/fragment_forum.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_grammar.xml" value="0.19655797101449277" />
@@ -48,9 +50,11 @@
         <entry key="app/src/main/res/layout/fragment_vocab.xml" value="0.129981884057971" />
         <entry key="app/src/main/res/layout/fragment_youtube.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/layout/item_comment.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.2" />
         <entry key="app/src/main/res/layout/list_post.xml" value="0.17654508611955422" />
         <entry key="app/src/main/res/layout/video_view.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/layout/week_progress_bar.xml" value="0.11752786220871327" />
+        <entry key="app/src/main/res/layout/word_list.xml" value="0.11503623188405797" />
       </map>
     </option>
   </component>
