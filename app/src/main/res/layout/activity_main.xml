@@ -10,7 +10,7 @@
         android:layout_centerInParent="true"
         android:textSize="18sp"
         android:textColor="#4a4a4a"
-        android:text="Home"
+        android:text=""
         />
 
     <FrameLayout
