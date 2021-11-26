@@ -45,7 +45,8 @@ class MainActivity : AppCompatActivity() {
             }
             else -> {
                 supportFragmentManager.inTransaction {
-                    add(R.id.frameLayout, HomeFragment())
+//                    add(R.id.frameLayout, HomeFragment())
+                    add(R.id.frameLayout, MenuFragment())
                 }
             }
         }
@@ -55,7 +56,8 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.homeFragment -> {
                     supportFragmentManager.inTransaction {
-                        replace(R.id.frameLayout, HomeFragment())
+//                        replace(R.id.frameLayout, HomeFragment())
+                        replace(R.id.frameLayout, MenuFragment())
                     }
                     setContent("Home")
                     true
